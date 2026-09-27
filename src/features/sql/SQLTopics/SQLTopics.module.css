@@ -1,0 +1,46 @@
+.sql{
+
+    padding:var(--section-padding);
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+
+    gap:35px;
+}
+
+.topicList{
+
+    margin-top:20px;
+
+    padding-left:20px;
+}
+
+.topicList li{
+
+    color:var(--secondary-text);
+
+    margin-bottom:12px;
+
+    line-height:1.8;
+
+    transition:var(--transition);
+}
+
+.topicList li:hover{
+
+    color:var(--primary-color);
+
+    transform:translateX(6px);
+}
+
+@media(max-width:768px){
+
+    .grid{
+
+        grid-template-columns:1fr;
+    }
+}

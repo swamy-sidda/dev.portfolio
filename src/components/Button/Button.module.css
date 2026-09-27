@@ -1,0 +1,88 @@
+.button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+
+    padding:10px 20px;
+
+    border:none;
+    border-radius:10px;
+
+    font-size:.95rem;
+    font-weight:600;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:all .3s ease;
+
+    white-space:nowrap;
+}
+
+/* ===========================
+   Primary
+=========================== */
+
+.primary{
+    background:var(--primary-color);
+    color:#fff;
+    box-shadow:0 4px 12px rgba(37,99,235,.20);
+}
+
+.primary:hover{
+    background:var(--primary-hover);
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Secondary
+=========================== */
+
+.secondary{
+    background:#fff;
+    color:var(--primary-color);
+    border:1.5px solid var(--primary-color);
+}
+
+.secondary:hover{
+    background:var(--primary-color);
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Outline
+=========================== */
+
+.outline{
+    background:transparent;
+    color:var(--text-color);
+    border:1.5px solid var(--border-color);
+}
+
+.outline:hover{
+    border-color:var(--primary-color);
+    color:var(--primary-color);
+    transform:translateY(-2px);
+}
+
+/* ===========================
+   Disabled
+=========================== */
+
+.button:disabled{
+    opacity:.55;
+    cursor:not-allowed;
+    transform:none;
+}
+
+@media(max-width:768px){
+
+    .button{
+        padding:9px 18px;
+        font-size:.9rem;
+    }
+
+}

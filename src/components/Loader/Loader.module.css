@@ -1,0 +1,38 @@
+.loaderContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:60px 20px;
+}
+
+.spinner{
+
+    width:60px;
+
+    height:60px;
+
+    border:6px solid var(--border-color);
+
+    border-top:6px solid var(--primary-color);
+
+    border-radius:50%;
+
+    animation:rotate 1s linear infinite;
+}
+
+.text{
+
+    color:var(--secondary-text);
+
+    font-size:1rem;
+
+    letter-spacing:1px;
+}

@@ -1,0 +1,333 @@
+/* ======================================
+   Fade Animations
+====================================== */
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+    }
+
+    to{
+
+        opacity:1;
+    }
+}
+
+.fadeIn{
+
+    animation:fadeIn .8s ease forwards;
+}
+
+/* ======================================
+   Slide Up
+====================================== */
+
+@keyframes slideUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+.slideUp{
+
+    animation:slideUp .8s ease forwards;
+}
+
+/* ======================================
+   Slide Left
+====================================== */
+
+@keyframes slideLeft{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+    }
+}
+
+.slideLeft{
+
+    animation:slideLeft .8s ease forwards;
+}
+
+/* ======================================
+   Slide Right
+====================================== */
+
+@keyframes slideRight{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(50px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+    }
+}
+
+.slideRight{
+
+    animation:slideRight .8s ease forwards;
+}
+
+/* ======================================
+   Zoom In
+====================================== */
+
+@keyframes zoomIn{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+    }
+}
+
+.zoomIn{
+
+    animation:zoomIn .7s ease forwards;
+}
+
+/* ======================================
+   Floating Animation
+====================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0px);
+    }
+
+    50%{
+
+        transform:translateY(-15px);
+    }
+
+    100%{
+
+        transform:translateY(0px);
+    }
+}
+
+.floating{
+
+    animation:floating 4s ease-in-out infinite;
+}
+
+/* ======================================
+   Pulse
+====================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+    }
+
+    50%{
+
+        transform:scale(1.05);
+    }
+
+    100%{
+
+        transform:scale(1);
+    }
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+}
+
+/* ======================================
+   Rotate
+====================================== */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+.rotate{
+
+    animation:rotate 10s linear infinite;
+}
+
+/* ======================================
+   Gradient Background
+====================================== */
+
+@keyframes gradientMove{
+
+    0%{
+
+        background-position:0% 50%;
+    }
+
+    50%{
+
+        background-position:100% 50%;
+    }
+
+    100%{
+
+        background-position:0% 50%;
+    }
+}
+
+.gradientAnimation{
+
+    background-size:300% 300%;
+
+    animation:gradientMove 10s ease infinite;
+}
+
+/* ======================================
+   Hover Lift
+====================================== */
+
+.hoverLift{
+
+    transition:var(--transition);
+}
+
+.hoverLift:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+}
+
+/* ======================================
+   Hover Scale
+====================================== */
+
+.hoverScale{
+
+    transition:var(--transition);
+}
+
+.hoverScale:hover{
+
+    transform:scale(1.05);
+}
+
+/* ======================================
+   Button Hover
+====================================== */
+
+.buttonHover{
+
+    transition:var(--transition);
+}
+
+.buttonHover:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+}
+
+/* ======================================
+   Image Hover
+====================================== */
+
+.imageHover{
+
+    overflow:hidden;
+}
+
+.imageHover img{
+
+    transition:transform .5s ease;
+}
+
+.imageHover:hover img{
+
+    transform:scale(1.08);
+}
+
+/* ======================================
+   Card Hover
+====================================== */
+
+.cardHover{
+
+    transition:var(--transition);
+}
+
+.cardHover:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:var(--shadow-lg);
+}
+
+/* ======================================
+   Spin Loader
+====================================== */
+
+@keyframes spin{
+
+    from{
+
+        transform:rotate(0deg);
+    }
+
+    to{
+
+        transform:rotate(360deg);
+    }
+}
+
+.spin{
+
+    animation:spin 1s linear infinite;
+}
